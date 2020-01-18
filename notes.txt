@@ -15,3 +15,8 @@ main.ts:
 
 # Creating new component with CLI and nesting component
 ng generate component servers
+
+# Component selectors
+1. Element selector: selector: 'app-servers'
+2. Attribute selector: selector: '[app-servers]'
+3. Class selector: selector: '.app-servers'
