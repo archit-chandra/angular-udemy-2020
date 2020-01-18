@@ -20,3 +20,6 @@ ng generate component servers
 1. Element selector: selector: 'app-servers'
 2. Attribute selector: selector: '[app-servers]'
 3. Class selector: selector: '.app-servers'
+
+# Data Binding
+1. String Interpolation: {{...}} - 'String'/String reference/Method returning String
