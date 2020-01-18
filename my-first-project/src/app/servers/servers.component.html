@@ -1,15 +1,8 @@
 <button class="btn btn-primary"
-        [disabled]="!isAllowedNewServer()">
-  <!--
-  if directly calling the variable
-  [disabled]="!allowNewServer"
-  -->
+        [disabled]="!isAllowedNewServer()"
+        (click)="onCreateServer()">
   Add Server
 </button>
-<p>{{allowNewServer}}</p>
-<!--
-avoid such property binding
-<p [innerText]="allowNewServer"></p>
--->
+<p>{{serverCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
