@@ -25,3 +25,4 @@ ng generate component servers
 1. String Interpolation: {{...}} - 'String'/String reference/Method returning String
 2. Property Binding: [property] = "data" - boolean/boolean reference/Method returning boolean
 3. Event Binding: (event) = "expression" - expression is usually a handler method
+4. Two way Binding: [(ngModel)] = "data"
