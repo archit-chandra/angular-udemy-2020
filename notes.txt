@@ -1,2 +1,14 @@
 # Adding Bootstrap
 npm install --save bootstrap@3
+
+# How Angular app gets loaded and started
+
+index.html: <app-root>Loading...</app-root> - served single page
+main.ts:
+        bundled scripts imported by CLI at runtime - convenience function
+        first code executed
+
+	app.module.ts
+		app.component.ts: selector: 'app-root'
+			app.component.css
+             app.component.html
