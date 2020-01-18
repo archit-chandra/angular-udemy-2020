@@ -12,3 +12,6 @@ main.ts:
 		app.component.ts: selector: 'app-root'
 			app.component.css
              app.component.html
+
+# Creating new component with CLI and nesting component
+ng generate component servers
