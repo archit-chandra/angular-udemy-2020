@@ -24,12 +24,7 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer() {
-    this.serverCreationStatus = 'Server was created';
+    this.serverCreationStatus = 'Server was created with name ' + this.serverName;
   }
-
-  // ngModel will bind the input data automatically to the variable
-  /*onUpdateServerName(event: Event) {
-    this.serverName = (<HTMLInputElement>event.target).value;
-  }*/
 
 }
