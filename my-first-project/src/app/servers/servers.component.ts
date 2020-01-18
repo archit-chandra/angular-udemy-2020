@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServer: boolean = false;
   serverCreationStatus: string = 'No server was created';
-  serverName: string = '';
+  serverName: string = 'Test Server';
 
   constructor() {
     setTimeout(() => {
@@ -27,8 +27,9 @@ export class ServersComponent implements OnInit {
     this.serverCreationStatus = 'Server was created';
   }
 
-  onUpdateServerName(event: Event) {
+  // ngModel will bind the input data automatically to the variable
+  /*onUpdateServerName(event: Event) {
     this.serverName = (<HTMLInputElement>event.target).value;
-  }
+  }*/
 
 }
