@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-project-assignments';
+  messageToDisplay: string = 'warning';
+
+  constructor() {
+    this.messageToDisplay = Math.random() > 0.5 ? 'success' : 'warning';
+  }
+
+  getMessageToDisplay() {
+    return this.messageToDisplay;
+  }
+
 }
