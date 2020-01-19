@@ -35,4 +35,12 @@ export class PasswordComponent implements OnInit {
   isButtonClickedOnce(logItem: number) {
     return logItem.valueOf() > 0;
   }
+
+  getBGColor(logItem: number) {
+    return logItem >= 5 ? 'blue' : 'transparent';
+  }
+
+  getTextColor(logItem: number) {
+    return logItem >= 5;
+  }
 }
