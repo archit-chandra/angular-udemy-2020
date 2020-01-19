@@ -26,3 +26,11 @@ ng generate component servers
 2. Property Binding: [property] = "data" - boolean/boolean reference/Method returning boolean
 3. Event Binding: (event) = "expression" - expression is usually a handler method
 4. Two way Binding: [(ngModel)] = "data"
+
+# Directives
+- are instructions in the DOM
+- can be with/without template
+
+- ngIf
+        structural, so used with (*)
+        *ngIf="data" - boolean/boolean reference/Method returning boolean
