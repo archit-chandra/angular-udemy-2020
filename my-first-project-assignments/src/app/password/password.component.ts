@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PasswordComponent implements OnInit {
   content: string = 'Secret Password = tuna';
-  contentVisible: boolean = true;
+  contentVisible: boolean = false;
+
+  buttonClicked: number = 0;
+  buttonClickedLog = [];
 
   constructor() {
   }
@@ -21,10 +24,15 @@ export class PasswordComponent implements OnInit {
 
   toggleContent() {
     this.contentVisible = !this.contentVisible;
+    this.buttonClicked = this.buttonClicked + 1;
+    this.buttonClickedLog.push(this.buttonClicked);
   }
 
   isContentVisible() {
     return this.contentVisible;
   }
 
+  isButtonClickedOnce(logItem: number) {
+    return logItem.valueOf() > 0;
+  }
 }
