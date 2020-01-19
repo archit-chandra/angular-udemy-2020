@@ -3,7 +3,8 @@
   class="form-control"
   [(ngModel)]="username">
 <button class="btn btn-primary"
-        [disabled]="!isClickable()">
+        [disabled]="!isClickable()"
+        (click)="resetUsername()">
   Submit
 </button>
 <p>{{username}}</p>

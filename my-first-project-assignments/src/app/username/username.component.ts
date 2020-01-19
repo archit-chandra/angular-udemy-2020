@@ -18,4 +18,8 @@ export class UsernameComponent implements OnInit {
     return this.username.length > 0;
   }
 
+  resetUsername() {
+    this.username = '';
+  }
+
 }
