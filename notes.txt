@@ -1,3 +1,6 @@
+# Creating New Project
+ng new my-first-project-assignments
+
 # Adding Bootstrap
 npm install --save bootstrap@3
 
