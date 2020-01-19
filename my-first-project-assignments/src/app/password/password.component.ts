@@ -6,10 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./password.component.css']
 })
 export class PasswordComponent implements OnInit {
+  content: string = 'Secret Password = tuna';
+  contentVisible: boolean = true;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  getContent() {
+    return this.content;
+  }
+
+  toggleContent() {
+    this.contentVisible = !this.contentVisible;
+  }
+
+  isContentVisible() {
+    return this.contentVisible;
   }
 
 }
