@@ -31,3 +31,6 @@ ng generate component servers
 - are instructions in the DOM
 - can be with/without template
 
+- ngIf
+        structural, so used with (*)
+        *ngIf="data" - boolean/boolean reference/Method returning boolean
