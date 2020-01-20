@@ -48,3 +48,8 @@ ng generate component servers --spec false
 # Debugging
 - Use Sourcemaps
 - Augury plugin
+
+
+# View Encpsulation
+- CSS applies to its own component only.
+  (because Angular creates a shadow DOM for each component by appending an unique id to all its elements)
