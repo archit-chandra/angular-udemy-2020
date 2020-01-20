@@ -31,6 +31,11 @@ ng generate component servers --spec false
 3. Event Binding: (event) = "expression" - expression is usually a handler method
 4. Two way Binding: [(ngModel)] = "data"
 
+- Property and Event binding can be done on:
+        i.   HTML elements  - native properties and events
+        ii.  Directives - custom properties and events
+        iii. Angular created components - custom properties and events
+
 # Directives
 - are instructions in the DOM
 - can be with/without template
