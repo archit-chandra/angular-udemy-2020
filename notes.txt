@@ -38,3 +38,8 @@ ng generate component servers --spec false
 - ngIf
         structural, so used with (*)
         *ngIf="data" - boolean/boolean reference/Method returning boolean
+
+
+# Debugging
+- Use Sourcemaps
+- Augury plugin
