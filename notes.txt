@@ -53,3 +53,8 @@ ng generate component servers --spec false
 # View Encpsulation
 - CSS applies to its own component only.
   (because Angular creates a shadow DOM for each component by appending an unique id to all its elements)
+
+# Local Reference
+- can be placed at any HTML element (not just input elements)
+- reference represents the the HTML element (not just its value)
+- can be used everywhere in the HTML template, but not in the typescript
