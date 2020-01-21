@@ -70,3 +70,21 @@ ng generate component servers --spec false
 - everything placed between <> of the same component, its content will be lost when try to pass from another (parent) component.
 - is directive (to hook in the component and show such content)
 - useful to create widgets, when contents come from outside and property binding is not useful.
+
+# Component lifecycle
+- ngOnChanges: called after a bound input property changes/ receives new values (@Input)
+               can be executed multiple times + when the component is created
+- ngOnInIt: called once the component is initialized
+            before DOM renders, after object is created
+            runs after constructor
+- ngDoCheck: called during every change detection runs (button click)
+             actual change may/may not happen
+             will be executed multiple times
+             do min. change here, will cost performance
+- ngAfterContentInit: called after projected content (by ng-content) has been projected to the view
+                      (not the view of the component itself)
+- ngAfterContentChecked: called every time the projected content has been checked
+- ngAfterViewInit: called after the component's view (and child views) has been initialized.
+                   after DOM renders (for parent + children component)
+- ngAfterViewChecked: called every time the view (+ child views) has been checked.
+- ngOnDestroy: called once the component is about to destroy
