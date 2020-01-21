@@ -58,3 +58,10 @@ ng generate component servers --spec false
 - can be placed at any HTML element (not just input elements)
 - reference represents the the HTML element (not just its value)
 - can be used everywhere in the HTML template, but not in the typescript
+- passed to typescript by methods
+
+# ViewChild
+- to obtain the value of element before we call the methods to pass the value from HTML to typescript
+- no method required anymore
+- ElementRef: Angular component
+- should not change value of HTML element by ViewChild ElementRef
