@@ -50,7 +50,7 @@ ng generate component servers --spec false
 - Augury plugin
 
 
-# View Encpsulation
+# View Encapsulation
 - CSS applies to its own component only.
   (because Angular creates a shadow DOM for each component by appending an unique id to all its elements)
 
@@ -65,3 +65,8 @@ ng generate component servers --spec false
 - no method required anymore
 - ElementRef: Angular component
 - should not change value of HTML element by ViewChild ElementRef
+
+# ng-content
+- everything placed between <> of the same component, its content will be lost when try to pass from another (parent) component.
+- is directive (to hook in the component and show such content)
+- useful to create widgets, when contents come from outside and property binding is not useful.
