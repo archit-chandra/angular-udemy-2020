@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-server-element',
@@ -7,13 +7,20 @@ import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
   // To remove Shadow DOM id appended by Angular to its elements
   /*encapsulation: ViewEncapsulation.None // Emulated(default), Native*/
 })
-export class ServerElementComponent implements OnInit {
+export class ServerElementComponent implements OnInit, OnChanges {
   @Input('srvElement') element: { type: string, name: string, content: string };
 
   constructor() {
+    console.log('constructor called!');
+  }
+
+  ngOnChanges(changes:SimpleChanges){
+    console.log('ngOnChanges called!');
+    console.log(changes);
   }
 
   ngOnInit() {
+    console.log('ngOnInit called!');
   }
 
 }
