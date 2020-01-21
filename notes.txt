@@ -31,6 +31,11 @@ ng generate component servers --spec false
 3. Event Binding: (event) = "expression" - expression is usually a handler method
 4. Two way Binding: [(ngModel)] = "data"
 
+- Property and Event binding can be done on:
+        i.   HTML elements  - native properties and events
+        ii.  Directives - custom properties and events
+        iii. Angular created components - custom properties and events
+
 # Directives
 - are instructions in the DOM
 - can be with/without template
@@ -43,3 +48,47 @@ ng generate component servers --spec false
 # Debugging
 - Use Sourcemaps
 - Augury plugin
+
+
+# View Encapsulation
+- CSS applies to its own component only.
+  (because Angular creates a shadow DOM for each component by appending an unique id to all its elements)
+
+# Local Reference
+- can be placed at any HTML element (not just input elements)
+- reference represents the the HTML element (not just its value)
+- can be used everywhere in the HTML template, but not in the typescript
+- passed to typescript by methods
+
+# ViewChild
+- to obtain the value of element before we call the methods to pass the value from HTML to typescript
+- no method required anymore
+- ElementRef: Angular component
+- should not change value of HTML element by ViewChild ElementRef
+
+# ng-content
+- everything placed between <> of the same component, its content will be lost when try to pass from another (parent) component.
+- is directive (to hook in the component and show such content)
+- useful to create widgets, when contents come from outside and property binding is not useful.
+
+# Component lifecycle
+- ngOnChanges: called after a bound input property changes/ receives new values (@Input)
+               can be executed multiple times + when the component is created (after constructor)
+- ngOnInIt: called once the component is initialized
+            before DOM renders, after object is created
+            runs after constructor
+- ngDoCheck: called during every change detection runs (button click)
+             actual change may/may not happen
+             will be executed multiple times
+             do min. change here, will cost performance
+- ngAfterContentInit: called after projected content (by ng-content) has been projected to the view
+                      (not the view of the component itself)
+                      called only once.
+- ngAfterContentChecked: called every time the projected content has been checked
+                         usually after ngDoCheck()
+- ngAfterViewInit: called after the component's view (and child views) has been initialized.
+                   from here - can access the value inside the component elements
+                   after DOM renders (for parent + children component)
+- ngAfterViewChecked: called every time the view (+ child views) has been checked.
+                      usually after ngDoCheck() & ngAfterContentChecked()
+- ngOnDestroy: called once the component is about to destroy
