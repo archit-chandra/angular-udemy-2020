@@ -73,7 +73,7 @@ ng generate component servers --spec false
 
 # Component lifecycle
 - ngOnChanges: called after a bound input property changes/ receives new values (@Input)
-               can be executed multiple times + when the component is created
+               can be executed multiple times + when the component is created (after constructor)
 - ngOnInIt: called once the component is initialized
             before DOM renders, after object is created
             runs after constructor
@@ -83,8 +83,12 @@ ng generate component servers --spec false
              do min. change here, will cost performance
 - ngAfterContentInit: called after projected content (by ng-content) has been projected to the view
                       (not the view of the component itself)
+                      called only once.
 - ngAfterContentChecked: called every time the projected content has been checked
+                         usually after ngDoCheck()
 - ngAfterViewInit: called after the component's view (and child views) has been initialized.
+                   from here - can access the value inside the component elements
                    after DOM renders (for parent + children component)
 - ngAfterViewChecked: called every time the view (+ child views) has been checked.
+                      usually after ngDoCheck() & ngAfterContentChecked()
 - ngOnDestroy: called once the component is about to destroy
