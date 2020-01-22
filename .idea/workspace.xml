@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7490d100-0bcf-4a98-91e3-89ba75a738e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/services-and-di/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/account/account.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/account/account.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/account/account.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/new-account/new-account.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/new-account/new-account.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/app/new-account/new-account.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-and-di/tslint.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\idea-workspace\angular-udemy-2020\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WhQ7L8PGxVyhYteKJzUhoj3MZ1" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/services-and-di/src" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="ts.external.directory.path" value="C:\idea-workspace\angular-udemy-2020\component-databinding-deep\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\idea-workspace\angular-udemy-2020\services-and-di\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="E2E Tests (my-first-project-assignments)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/my-first-project-assignments/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (my-first-project)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/my-first-project/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (recipe-shopping-app)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/recipe-shopping-app/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/my-first-project/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7490d100-0bcf-4a98-91e3-89ba75a738e9" name="Default Changelist" comment="" />
+      <created>1579599178491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579599178491</updated>
+      <workItem from="1579599186084" duration="61000" />
+      <workItem from="1579599267905" duration="11458000" />
+      <workItem from="1579616125655" duration="9906000" />
+      <workItem from="1579695849119" duration="7094000" />
+      <workItem from="1579703126588" duration="3333000" />
+    </task>
+    <task id="LOCAL-00001" summary="Local References in Templates: used local references instead of ngModel directives and passed it to the button click methods">
+      <created>1579601054078</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579601054078</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Local References in Templates: modified the button click methods to obtain the references and use its values">
+      <created>1579601139297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579601139297</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Local References in Templates: removed the local variable (not required anymore)">
+      <created>1579601175465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579601175465</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Motes: Local References in Templates">
+      <created>1579601195235</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579601195235</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ViewChild ElementRef: accessing HTML element value directly in the typescript">
+      <created>1579602197819</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579602197819</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Notes: ViewChild ElementRef">
+      <created>1579602233446</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579602233446</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Notes: ng-content">
+      <created>1579604803015</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579604803015</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ng-content: passing markup and contents from other (parent) component">
+      <created>1579604862597</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579604862597</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ng-content: css applied on (parent) component, because css info lost when showing markup and contents via ng-content">
+      <created>1579604938358</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1579604938358</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Notes: Component lifecycle">
+      <created>1579610436589</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1579610436589</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Component lifecycle: constructor, ngOnChanges, ngOnInit">
+      <created>1579610472959</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1579610472959</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Component lifecycle: other lifecycle hooks + edit notes">
+      <created>1579613583729</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1579613583729</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ng-content with ContentChild: local reference on the passed content from other (parent) component">
+      <created>1579614376735</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1579614376735</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ng-content with ContentChild: ContentChild reference ElementRef + displaying its value in ngOnInit(-) and ngAfterContentInit(+)">
+      <created>1579614460812</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1579614460812</updated>
+    </task>
+    <task id="LOCAL-00015" summary="course: adding navigation with event binding">
+      <created>1579618901469</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1579618901469</updated>
+    </task>
+    <task id="LOCAL-00016" summary="course: passing (and looping) recipe data with property binding">
+      <created>1579619035689</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1579619035689</updated>
+    </task>
+    <task id="LOCAL-00017" summary="course: passing selected recipe by event binding">
+      <created>1579621228962</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1579621228962</updated>
+    </task>
+    <task id="LOCAL-00018" summary="course: showing recipe detail only if a recipe is selected.">
+      <created>1579621516819</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1579621516819</updated>
+    </task>
+    <task id="LOCAL-00019" summary="course: passing selected recipe to show recipe details by property binding">
+      <created>1579624198090</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1579624198090</updated>
+    </task>
+    <task id="LOCAL-00020" summary="course: allowing user to add ingredients in shopping list">
+      <created>1579625585601</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1579625585601</updated>
+    </task>
+    <task id="LOCAL-00021" summary="refreshing attribute directives - ngClass, ngStyle">
+      <created>1579696624693</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1579696624693</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Basic Directive: created basic directive">
+      <created>1579697966229</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1579697966229</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Notes: creating directive by CLI">
+      <created>1579698001949</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1579698001949</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Used HostListener to listen to HostEvents - to listen some events happening on the element where directive is sitting upon">
+      <created>1579698485217</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1579698485217</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Used HostBinding to bind to host properties - alternative to use renderer">
+      <created>1579699037530</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1579699037530</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Binding to directive property: to let the user override the default values provided by the directive">
+      <created>1579700559614</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1579700559614</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Building custom structural directive: created custom structural directive">
+      <created>1579702058208</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1579702058208</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Building custom structural directive: used custom structural directive">
+      <created>1579702132642</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1579702132642</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Understanding ngSwitch directive">
+      <created>1579702577743</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1579702577743</updated>
+    </task>
+    <task id="LOCAL-00030" summary="course directives: added directive to expand/collapse the dropdown on click">
+      <created>1579704604874</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1579704604874</updated>
+    </task>
+    <task id="LOCAL-00031" summary="course directives: used dropdown directive in header and recipe details dropdown buttons">
+      <created>1579704661638</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1579704661638</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Notes: ng-content" />
+    <MESSAGE value="ng-content: passing markup and contents from other (parent) component" />
+    <MESSAGE value="ng-content: css applied on (parent) component, because css info lost when showing markup and contents via ng-content" />
+    <MESSAGE value="Notes: Component lifecycle" />
+    <MESSAGE value="Component lifecycle: constructor, ngOnChanges, ngOnInit" />
+    <MESSAGE value="Component lifecycle: other lifecycle hooks + edit notes" />
+    <MESSAGE value="ng-content with ContentChild: local reference on the passed content from other (parent) component" />
+    <MESSAGE value="ng-content with ContentChild: ContentChild reference ElementRef + displaying its value in ngOnInit(-) and ngAfterContentInit(+)" />
+    <MESSAGE value="course: adding navigation with event binding" />
+    <MESSAGE value="course: passing (and looping) recipe data with property binding" />
+    <MESSAGE value="course: passing selected recipe by event binding" />
+    <MESSAGE value="course: showing recipe detail only if a recipe is selected." />
+    <MESSAGE value="course: passing selected recipe to show recipe details by property binding" />
+    <MESSAGE value="course: allowing user to add ingredients in shopping list" />
+    <MESSAGE value="refreshing attribute directives - ngClass, ngStyle" />
+    <MESSAGE value="Basic Directive: created basic directive" />
+    <MESSAGE value="Notes: creating directive by CLI" />
+    <MESSAGE value="Used HostListener to listen to HostEvents - to listen some events happening on the element where directive is sitting upon" />
+    <MESSAGE value="Used HostBinding to bind to host properties - alternative to use renderer" />
+    <MESSAGE value="Binding to directive property: to let the user override the default values provided by the directive" />
+    <MESSAGE value="Building custom structural directive: created custom structural directive" />
+    <MESSAGE value="Building custom structural directive: used custom structural directive" />
+    <MESSAGE value="Understanding ngSwitch directive" />
+    <MESSAGE value="course directives: added directive to expand/collapse the dropdown on click" />
+    <MESSAGE value="course directives: used dropdown directive in header and recipe details dropdown buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="course directives: used dropdown directive in header and recipe details dropdown buttons" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1976" y="42" width="1794" height="996" key="CommitChangelistDialog2" timestamp="1579707862912">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1976" y="42" width="1794" height="996" key="CommitChangelistDialog2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579707862912" />
+    <state x="2096" y="105" key="DiffContextDialog" timestamp="1579701980241">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2096" y="105" key="DiffContextDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579701980241" />
+    <state x="2648" y="414" key="GitRewordDialog" timestamp="1579602068834">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2648" y="414" key="GitRewordDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579602068834" />
+    <state x="2574" y="179" key="RollbackChangesDialog" timestamp="1579704584671">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2574" y="179" key="RollbackChangesDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579704584671" />
+    <state x="2264" y="80" key="SettingsEditor" timestamp="1579696314628">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2264" y="80" key="SettingsEditor/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579696314628" />
+    <state x="2717" y="433" key="VCS.ChangelistChooser" timestamp="1579704685156">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2717" y="433" key="VCS.ChangelistChooser/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579704685156" />
+    <state x="2740" y="434" key="VCS.EditChangelistDialog" timestamp="1579704673572">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2740" y="434" key="VCS.EditChangelistDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579704673572" />
+    <state x="2371" y="205" key="Vcs.Push.Dialog.v2" timestamp="1579702596286">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2371" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579702596286" />
+    <state x="2499" y="319" key="com.intellij.ide.util.TipDialog" timestamp="1579703132274">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2499" y="319" key="com.intellij.ide.util.TipDialog/0.0.1920.1032/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579703132274" />
+  </component>
+</project>
