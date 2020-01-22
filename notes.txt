@@ -104,3 +104,12 @@ main.ts:
 - ngAfterViewChecked: called every time the view (+ child views) has been checked.
                       usually after ngDoCheck() & ngAfterContentChecked()
 - ngOnDestroy: called once the component is about to destroy
+
+# Service and DI
+- when injecting a service to a component, all its child components also get the same instance of that service.
+  the new instance of service can be provided to the child component by explicitly injecting the service to it.
+  the new service instance will override the new service instance.
+  (Hierarchical injection)
+- AppModule is the highest parent component - (same service instance Application-wide)
+  AppComponent - (same service instance for all its components, but not for other services)
+- one service can be injected to other service (like Java)
