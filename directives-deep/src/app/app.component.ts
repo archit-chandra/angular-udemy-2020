@@ -10,6 +10,8 @@ export class AppComponent {
   evenNumbers = [2, 4];
   onlyOdd = false;
 
+  value = 10;
+
   onToggle() {
     this.onlyOdd = !this.onlyOdd;
   }
