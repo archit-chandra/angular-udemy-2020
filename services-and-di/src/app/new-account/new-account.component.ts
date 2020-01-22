@@ -9,6 +9,7 @@ import {AccountService} from '../shared/account.service';
 export class NewAccountComponent {
 
   constructor(private accountService: AccountService) {
+    accountService.statusUpdated.subscribe((status: string) => alert('New Status: ' + status));
   }
 
   onCreateAccount(accountName: string, accountStatus: string) {
