@@ -40,9 +40,18 @@ ng generate component servers --spec false
 - are instructions in the DOM
 - can be with/without template
 
-- ngIf
-        structural, so used with (*)
-        *ngIf="data" - boolean/boolean reference/Method returning boolean
+- attributes directives: only affect the element they are added to
+-- ngClass
+   [ngClass]="{online: serverStatus === 'online', offline: serverStatus === 'offline'}"
+-- ngStyle
+   [ngStyle]="{backgroundColor:getColor()}"
+
+- structural directives (*): change the structure of DOM around this element
+                             2 structural directives can't be put on the same element. Only 1 allowed per element.
+-- ngIf
+   *ngIf="data" - boolean/boolean reference/Method returning boolean
+-- ngFor
+   *ngFor="let recipeItem of recipies"
 
 
 # Debugging
