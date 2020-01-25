@@ -35,6 +35,8 @@ const appRoutes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(appRoutes)
+    // used with old web servers - to make sure it returns index.html (which contains angular app) in case of any issue.
+    // RouterModule.forRoot(appRoutes, {useHash: true})
   ],
   exports: [
     RouterModule
