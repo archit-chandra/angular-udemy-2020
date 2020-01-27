@@ -143,3 +143,7 @@ main.ts:
 
 - observable stops once it throws error. (no more emitting values)
 - observable is complete when everything is done by it without error (no more emitting values)
+
+- Operators: receives data sent by observables
+             make changes (eg. transform, filter etc.) https://www.learnrxjs.io/learn-rxjs/operators
+             and then send to subscription
