@@ -138,3 +138,7 @@ main.ts:
 - (unsubscribe): to stop memory leaks because -
                  there are certain observables keeps on going (emitting values)
                  even if you are not interested in their values anymore.
+
+- no need to unsubscribe when subscribing to observables by Angular. Angular destroys the subscription internally.
+
+- observable stops once it throws error. (no more emitting values)
