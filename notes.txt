@@ -159,3 +159,7 @@ main.ts:
 
 - ngModel : to let the input element(s) be the part of angular form json => form control
 - name="...": to give the name of the form control
+
+
+- dirty: when form control value is changed
+- touched: when form control is accessed irrespective of whether its value is changed or not
