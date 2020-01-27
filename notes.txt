@@ -120,3 +120,16 @@ main.ts:
 - "/servers" (absolute path)
 -  "servers" (relative path) : appends the path specified in the router link
 - can also use directory like path like "./servers", "../servers" (but don't use it)
+
+# Observables
+- various data sources
+                  * user input events
+                  * http requests
+                  * triggered in code
+
+
+# Observers
+- monitor observables and handle data accordingly (our code)
+                  * data handle (happy response)
+                  * error handle
+                  * completion handle (of observables, which may/may not complete [{button click}/{http request}])
