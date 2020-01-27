@@ -120,3 +120,36 @@ main.ts:
 - "/servers" (absolute path)
 -  "servers" (relative path) : appends the path specified in the router link
 - can also use directory like path like "./servers", "../servers" (but don't use it)
+
+# Observables
+- various data sources
+                  * user input events
+                  * http requests
+                  * triggered in code
+
+
+# Observers
+- monitor observables and handle data accordingly (our code)
+                  * data handle (happy response)
+                  * error handle
+                  * completion handle (of observables, which may/may not complete [{button click}/{http request}])
+
+- (subscribe): to be informed about the changes in data sent by observables
+- (unsubscribe): to stop memory leaks because -
+                 there are certain observables keeps on going (emitting values)
+                 even if you are not interested in their values anymore.
+
+- no need to unsubscribe when subscribing to observables by Angular. Angular destroys the subscription internally.
+
+- observable stops once it throws error. (no more emitting values)
+- observable is complete when everything is done by it without error (no more emitting values)
+
+- Operators: receives data sent by observables
+             make changes (eg. transform, filter etc.) https://www.learnrxjs.io/learn-rxjs/operators
+             and then send to subscription
+
+- Subject: are like observables, but it is more active because -
+           we can call/emit (next()) from outside,
+           i.e. can be triggered from user event (button)
+
+           only used for cross component communication only via services on manual trigger
