@@ -153,3 +153,13 @@ main.ts:
            i.e. can be triggered from user event (button)
 
            only used for cross component communication only via services on manual trigger
+
+
+# Form handling
+
+- ngModel : to let the input element(s) be the part of angular form json => form control
+- name="...": to give the name of the form control
+
+
+- dirty: when form control value is changed
+- touched: when form control is accessed irrespective of whether its value is changed or not
