@@ -51,5 +51,8 @@ export class AppComponent {
     this.user.answer = this.signupForm.value.questionAnswer;
     this.user.gender = this.signupForm.value.gender;
     console.log(this.user);
+
+    // NOTES: it will empty the value + reset the form state
+    this.signupForm.reset();
   }
 }
