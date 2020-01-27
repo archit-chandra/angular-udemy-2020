@@ -151,3 +151,5 @@ main.ts:
 - Subject: are like observables, but it is more active because -
            we can call/emit (next()) from outside,
            i.e. can be triggered from user event (button)
+
+           only used for cross component communication only via services on manual trigger
