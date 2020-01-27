@@ -147,3 +147,7 @@ main.ts:
 - Operators: receives data sent by observables
              make changes (eg. transform, filter etc.) https://www.learnrxjs.io/learn-rxjs/operators
              and then send to subscription
+
+- Subject: are like observables, but it is more active because -
+           we can call/emit (next()) from outside,
+           i.e. can be triggered from user event (button)
