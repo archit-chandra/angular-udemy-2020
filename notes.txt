@@ -133,3 +133,8 @@ main.ts:
                   * data handle (happy response)
                   * error handle
                   * completion handle (of observables, which may/may not complete [{button click}/{http request}])
+
+- (subscribe): to be informed about the changes in data sent by observables
+- (unsubscribe): to stop memory leaks because -
+                 there are certain observables keeps on going (emitting values)
+                 even if you are not interested in their values anymore.
