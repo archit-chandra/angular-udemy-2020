@@ -57,7 +57,10 @@
         </div>
       </div>
       <div class="row">
-        <label class="col-xs-12">Ingredients:</label>
+        <div *ngIf="isIngredientsPresent()">
+          <label class="col-xs-8">Ingredients:</label>
+          <label class="col-xs-2">Amount:</label>
+        </div>
         <div class="col-xs-12" formArrayName="ingredients">
           <div class="row"
                style="margin-bottom: 5px;"

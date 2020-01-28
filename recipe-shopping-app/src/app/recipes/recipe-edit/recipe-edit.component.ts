@@ -110,4 +110,8 @@ export class RecipeEditComponent implements OnInit {
   onDeleteAllIngredients() {
     (this.recipeForm.get('ingredients') as FormArray).clear();
   }
+
+  isIngredientsPresent() {
+    return this.controls.length > 0;
+  }
 }
