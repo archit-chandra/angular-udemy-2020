@@ -168,3 +168,4 @@ main.ts:
 # Pipes
 
 - only change the display to the UI. The model remain the same
+- https://angular.io/api?type=pipe
