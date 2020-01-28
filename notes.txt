@@ -163,3 +163,8 @@ main.ts:
 
 - dirty: when form control value is changed
 - touched: when form control is accessed irrespective of whether its value is changed or not
+
+
+# Pipes
+
+- only change the display to the UI. The model remain the same
