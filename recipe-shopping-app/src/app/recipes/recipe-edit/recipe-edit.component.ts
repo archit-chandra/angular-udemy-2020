@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Params} from "@angular/router";
 import {FormArray, FormControl, FormGroup, Validators} from "@angular/forms";
 import {RecipeService} from "../recipe.service";
+import {RecipeModel} from "../recipe.model";
 
 @Component({
   selector: 'app-recipe-edit',
@@ -67,7 +68,21 @@ export class RecipeEditComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.recipeForm);
+    const newRecipe = new RecipeModel(
+      this.recipeForm.value.name,
+      this.recipeForm.value.description,
+      this.recipeForm.value.imagePath,
+      this.recipeForm.value.ingredients,
+    );
+
+    // NOTES: mapping objects with all controls having same name
+    // Alternate: when all field have the same name (here description field is different)
+    // this.recipeForm.value == newRecipe
+    if (this.editMode) {
+      this.recipeService.updateRecipe(this.id, newRecipe); // this.recipeForm.value
+    } else {
+      this.recipeService.addRecipe(newRecipe); // this.recipeForm.value
+    }
   }
 
   onAddIngredient() {
