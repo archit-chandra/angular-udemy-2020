@@ -170,3 +170,4 @@ main.ts:
 - only change the display to the UI. The model remain the same
 - https://angular.io/api?type=pipe
 - when chaining pipes, order is important. Otherwise, errors are possible
+- ng generate pipe shorten
