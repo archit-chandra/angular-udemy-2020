@@ -10,6 +10,7 @@ import {PostModel} from "./models/post.model";
 })
 export class AppComponent implements OnInit {
   loadedPosts: PostModel[] = [];
+  isFetching = false;
 
   constructor(private http: HttpClient) {
   }
@@ -33,6 +34,7 @@ export class AppComponent implements OnInit {
   }
 
   private fetchPosts() {
+    this.isFetching = true;
     this.http.get<{ [key: string]: PostModel }>('https://angular-2020-6c98c.firebaseio.com/posts.json')
       .pipe(map(responseData => {
         const postsArray: PostModel[] = [];
@@ -46,6 +48,7 @@ export class AppComponent implements OnInit {
       .subscribe(
         (posts) => {
           console.log(posts);
+          this.isFetching = false;
           this.loadedPosts = posts;
         }
       );
