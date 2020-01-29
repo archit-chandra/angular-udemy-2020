@@ -60,7 +60,8 @@ export class PostService {
   deletePosts() {
     return this.http.delete('https://angular-2020-6c98c.firebaseio.com/posts.json',
       {
-        observe: "events"
+        observe: "events",
+        responseType: 'json' // text, blob etc - to let angular parse it to required type
       }).pipe(tap(event => {
       console.log(event);
       if (event.type === HttpEventType.Response) {
