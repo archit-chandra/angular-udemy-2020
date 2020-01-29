@@ -190,3 +190,8 @@ main.ts:
                       1. When observable + its subscription is defined in Service
                          & Component doesn't subscribe to the observable
                       2. When multiple places in application are interested to the observable outcome.
+
+
+# Interceptors
+
+- order matters for interceptors in the app.module
