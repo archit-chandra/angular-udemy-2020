@@ -174,3 +174,8 @@ main.ts:
 
 
 - ng generate pipe shorten
+
+
+# HTTP requests
+
+- HTTP requests are only sent when subscribed.
