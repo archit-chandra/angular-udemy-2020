@@ -179,3 +179,7 @@ main.ts:
 # HTTP requests
 
 - HTTP requests are only sent when subscribed.
+- Services to be used for lifting (conversion, calculation), observables, subscription [+ subscribing to it]
+  Components to be used for UI related items only
+  +
+  subscribing to the observables/subscriptions if that affects UI (and its related items)
