@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {map} from "rxjs/operators";
+import {PostModel} from "./models/post.model";
 
 @Component({
   selector: 'app-root',
@@ -17,9 +18,9 @@ export class AppComponent implements OnInit {
     this.fetchPosts();
   }
 
-  onCreatePost(postData: { title: string; content: string }) {
+  onCreatePost(postData: PostModel) {
     // Send Http request
-    this.http.post('https://angular-2020-6c98c.firebaseio.com/posts.json', postData).subscribe(
+    this.http.post<{ name: string }>('https://angular-2020-6c98c.firebaseio.com/posts.json', postData).subscribe(
       (responseData) => {
         console.log(responseData);
       }
@@ -32,9 +33,9 @@ export class AppComponent implements OnInit {
   }
 
   private fetchPosts() {
-    this.http.get('https://angular-2020-6c98c.firebaseio.com/posts.json')
+    this.http.get<{ [key: string]: PostModel }>('https://angular-2020-6c98c.firebaseio.com/posts.json')
       .pipe(map(responseData => {
-        const postsArray = [];
+        const postsArray: PostModel[] = [];
         for (const key in responseData) {
           if (responseData.hasOwnProperty(key)) {
             postsArray.push({...responseData[key], id: key});
