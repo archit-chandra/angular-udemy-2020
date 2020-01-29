@@ -29,4 +29,8 @@ export class PostService {
         return postsArray;
       }));
   }
+
+  deletePosts() {
+    return this.http.delete('https://angular-2020-6c98c.firebaseio.com/posts.json')
+  }
 }
