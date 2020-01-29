@@ -1,22 +1,27 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {PostModel} from "./models/post.model";
 import {PostService} from "./services/post.service";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
   loadedPosts: PostModel[] = [];
   isFetching = false;
   errorMsg = null;
+  errorMsgSubscription: Subscription;
 
   constructor(private postService: PostService) {
   }
 
   ngOnInit() {
     this.fetchPosts();
+    this.errorMsgSubscription = this.postService.errorSubject.subscribe(errorMessage => {
+      this.errorMsg = errorMessage;
+    });
   }
 
   onCreatePost(postData: PostModel) {
@@ -47,5 +52,9 @@ export class AppComponent implements OnInit {
     this.postService.deletePosts().subscribe(() => {
       this.loadedPosts = [];
     });
+  }
+
+  ngOnDestroy(): void {
+    this.errorMsgSubscription.unsubscribe();
   }
 }

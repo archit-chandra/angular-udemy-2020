@@ -179,7 +179,14 @@ main.ts:
 # HTTP requests
 
 - HTTP requests are only sent when subscribed.
-- Services to be used for lifting (conversion, calculation), observables, subscription [+ subscribing to it]
+- Services to be used for lifting (conversion, calculation), observables, subjects [+ subscribing to it]
   Components to be used for UI related items only
   +
-  subscribing to the observables/subscriptions if that affects UI (and its related items)
+  subscribing to the observables/subjects if that affects UI (and its related items)
+
+# Error handling
+
+- using Subjects when:
+                      1. When observable + its subscription is defined in Service
+                         & Component doesn't subscribe to the observable
+                      2. When multiple places in application are interested to the observable outcome.
