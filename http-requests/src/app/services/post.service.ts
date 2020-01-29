@@ -1,8 +1,8 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {PostModel} from "../models/post.model";
-import {map} from "rxjs/operators";
-import {Subject} from "rxjs";
+import {catchError, map} from "rxjs/operators";
+import {Subject, throwError} from "rxjs";
 
 @Injectable({providedIn: 'root'})
 export class PostService {
@@ -25,14 +25,19 @@ export class PostService {
   fetchPosts() {
     return this.http.get<{ [key: string]: PostModel }>('https://angular-2020-6c98c.firebaseio.com/posts.json')
       .pipe(map(responseData => {
-        const postsArray: PostModel[] = [];
-        for (const key in responseData) {
-          if (responseData.hasOwnProperty(key)) {
-            postsArray.push({...responseData[key], id: key});
+          const postsArray: PostModel[] = [];
+          for (const key in responseData) {
+            if (responseData.hasOwnProperty(key)) {
+              postsArray.push({...responseData[key], id: key});
+            }
           }
-        }
-        return postsArray;
-      }));
+          return postsArray;
+        }),
+        catchError(errorResponse => {
+          // not for UI but send to server for analysis
+          // then
+          return throwError(errorResponse); // can customize here errorResponse
+        }));
   }
 
   deletePosts() {
