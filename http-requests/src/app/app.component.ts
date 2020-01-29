@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.fetchPosts();
   }
 
   onCreatePost(postData: { title: string; content: string }) {
@@ -26,6 +27,15 @@ export class AppComponent implements OnInit {
 
   onFetchPosts() {
     // Send Http request
+    this.fetchPosts();
+  }
+
+  private fetchPosts() {
+    this.http.get('https://angular-2020-6c98c.firebaseio.com/posts.json').subscribe(
+      (posts) => {
+        console.log(posts);
+      }
+    );
   }
 
   onClearPosts() {
