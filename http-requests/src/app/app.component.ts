@@ -42,6 +42,7 @@ export class AppComponent implements OnInit, OnDestroy {
       },
       error => {
         console.log(error);
+        this.isFetching = false;
         // this.errorMsg = error.message;
         this.errorMsg = error.statusText;
       }
@@ -56,5 +57,9 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.errorMsgSubscription.unsubscribe();
+  }
+
+  onHandleError() {
+    this.errorMsg = null;
   }
 }
