@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
 import {PostModel} from "../models/post.model";
 import {catchError, map} from "rxjs/operators";
 import {Subject, throwError} from "rxjs";
@@ -23,9 +23,15 @@ export class PostService {
   }
 
   fetchPosts() {
+    // NOTES: for adding multiple query params
+    /*let searchParams=new HttpParams();
+    searchParams=searchParams.append('print', 'pretty');
+    searchParams=searchParams.append('custom', 'key');*/
     return this.http.get<{ [key: string]: PostModel }>('https://angular-2020-6c98c.firebaseio.com/posts.json',
       {
-        headers: new HttpHeaders({'Custom-Header': 'hello'})
+        headers: new HttpHeaders({'Custom-Header': 'hello'}),
+        params: new HttpParams().set('print', 'pretty')
+        //params: searchParams
       })
       .pipe(map(responseData => {
           const postsArray: PostModel[] = [];
