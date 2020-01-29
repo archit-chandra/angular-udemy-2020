@@ -10,6 +10,7 @@ import {PostService} from "./services/post.service";
 export class AppComponent implements OnInit {
   loadedPosts: PostModel[] = [];
   isFetching = false;
+  errorMsg = null;
 
   constructor(private postService: PostService) {
   }
@@ -33,6 +34,11 @@ export class AppComponent implements OnInit {
         console.log(posts);
         this.isFetching = false;
         this.loadedPosts = posts;
+      },
+      error => {
+        console.log(error);
+        // this.errorMsg = error.message;
+        this.errorMsg = error.statusText;
       }
     );
   }
