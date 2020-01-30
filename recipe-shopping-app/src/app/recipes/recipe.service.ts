@@ -8,7 +8,7 @@ import {Subject} from "rxjs";
 export class RecipeService {
 
   recipesChanged = new Subject<RecipeModel[]>();
-  private recipes: RecipeModel[] = [
+  /*private recipes: RecipeModel[] = [
     new RecipeModel(
       'Schnitzel',
       'This is delicious',
@@ -24,13 +24,19 @@ export class RecipeService {
       [
         new IngredientModel('Buns', 2),
         new IngredientModel('Meat', 1)
-      ])];
+      ])];*/
+  private recipes: RecipeModel[] = [];
 
   constructor(private shoppingListService: ShoppingListService) {
   }
 
   getRecipes() {
     return this.recipes.slice(); // slice will return the copy
+  }
+
+  setRecipes(recipes: RecipeModel[]) {
+    this.recipes = recipes;
+    this.recipesChanged.next(this.recipes.slice());
   }
 
   getRecipe(index: number) {
