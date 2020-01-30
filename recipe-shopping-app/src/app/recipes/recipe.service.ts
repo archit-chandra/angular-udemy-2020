@@ -33,6 +33,11 @@ export class RecipeService {
     return this.recipes.slice(); // slice will return the copy
   }
 
+  setRecipes(recipes: RecipeModel[]) {
+    this.recipes = recipes;
+    this.recipesChanged.next(this.recipes.slice());
+  }
+
   getRecipe(index: number) {
     return this.recipes[index];
   }
