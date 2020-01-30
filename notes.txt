@@ -195,3 +195,8 @@ main.ts:
 # Interceptors
 
 - order matters for interceptors in the app.module
+
+# Authentication
+
+- https://firebase.google.com/docs/reference/rest/auth#section-create-email-password
+- https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-password
